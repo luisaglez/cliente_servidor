@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Guardar" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54024/Guardar.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54024/Guardar.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54024/Guardar.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGuardar_guardar_InputMessage">
+    <wsdl:part name="parameters" element="tns:guardar" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_guardar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:guardarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_buscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscar" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_buscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_mostrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:mostrar" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_mostrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mostrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_obtener_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtener" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_obtener_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_num_InputMessage">
+    <wsdl:part name="parameters" element="tns:num" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_num_OutputMessage">
+    <wsdl:part name="parameters" element="tns:numResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_toText_InputMessage">
+    <wsdl:part name="parameters" element="tns:toText" />
+  </wsdl:message>
+  <wsdl:message name="IGuardar_toText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:toTextResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGuardar">
+    <wsdl:operation name="guardar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/guardar" message="tns:IGuardar_guardar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/guardarResponse" message="tns:IGuardar_guardar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/buscar" message="tns:IGuardar_buscar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/buscarResponse" message="tns:IGuardar_buscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mostrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/mostrar" message="tns:IGuardar_mostrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/mostrarResponse" message="tns:IGuardar_mostrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/obtener" message="tns:IGuardar_obtener_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/obtenerResponse" message="tns:IGuardar_obtener_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="num">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/num" message="tns:IGuardar_num_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/numResponse" message="tns:IGuardar_num_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="toText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGuardar/toText" message="tns:IGuardar_toText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGuardar/toTextResponse" message="tns:IGuardar_toText_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGuardar" type="tns:IGuardar">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="guardar">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/guardar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/buscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mostrar">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/mostrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/obtener" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="num">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/num" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toText">
+      <soap:operation soapAction="http://tempuri.org/IGuardar/toText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Guardar">
+    <wsdl:port name="BasicHttpBinding_IGuardar" binding="tns:BasicHttpBinding_IGuardar">
+      <soap:address location="http://localhost:54024/Guardar.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

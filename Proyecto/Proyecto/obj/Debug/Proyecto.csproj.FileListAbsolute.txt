@@ -1,0 +1,9 @@
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.Form1.resources
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.Cache
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+c:\users\sonia\documents\visual studio 2015\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
